@@ -24,11 +24,11 @@
     padding: 5px 5px;
     border: 2px solid rgb(118, 160, 2);
 }
-/* .main-div input:focus{
+.main-div input:focus{
     outline: none !important;
     border-color: rgb(118, 160, 2);
     box-shadow: 0 0 10px rgba(118, 160, 2,0.3);
-} */
+}
 .srch-btn{
     background-color: rgb(118, 160, 2);
     color: #fff;;
