@@ -8,12 +8,11 @@ function Finder() {
   const [searchFlag, setSearchFlag] = useState(false);
   const handleChange = (e) => {
     let a = e.target.value;
-    console.log(a);
     setUser(a);
   };
 
   const handleClick = () => {
-    // console.log(getData);
+   
     getGithubUserData();
   };
 
@@ -23,14 +22,12 @@ function Finder() {
             alert("Please Enter Username");
         }
         else{
-    setSearchFlag(true);
-
-            console.log(user);
-      const res = await fetch(`https://api.github.com/users/${user}`);
-      const getActualData = await res.json();
-      setData(getActualData);
-      //   console.log(getActualData)
-      console.log(getActualData.login);
+            
+           
+            const res = await fetch(`https://api.github.com/users/${user}`);
+            const getActualData = await res.json();
+            setData(getActualData);
+            setSearchFlag(true);
         }
       
     } catch (err) {
@@ -68,7 +65,7 @@ function Finder() {
                 <h3>{val.bio}</h3>
                 <p><b>User Name :</b>  {val.login} <br /><b>Name :</b>  {val.name} <br /> <b>Location: </b> {val.location}  
                 <br /> <b>Repository :</b> {val.public_repos} <br />
-                 <b> Profile Link :</b>   <a href={val.html_url} target="_blank"><button type="button" class="btn btn-success px-2 py-0">{val.html_url}</button> </a>
+                 <b> Profile Link :</b>   <a href={val.html_url} target="_blank"><button type="button" className="btn btn-success px-2 py-0">{val.html_url}</button> </a>
                 
                 </p>
                 
