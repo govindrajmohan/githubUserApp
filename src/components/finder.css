@@ -1,0 +1,80 @@
+.main-div{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+    border: 2px solid rgb(128, 128, 128);
+    box-shadow: 0 2px 5px rgba(19, 19, 19, 0.5);
+}
+
+.heading-bg{
+    background-color: rgb(118, 160, 2);
+    color: #fff;
+    padding: 10px 0px;
+    border-radius: 1px;
+
+}
+.heading-bg h1,.heading-bg h3{
+    text-shadow:1px 1px rgba(0, 0, 0, 0.527);
+}
+
+.main-div input {
+    border-radius: 1px;
+    margin: 15px 0px;
+    padding: 5px 5px;
+    border: 2px solid rgb(118, 160, 2);
+}
+/* .main-div input:focus{
+    outline: none !important;
+    border-color: rgb(118, 160, 2);
+    box-shadow: 0 0 10px rgba(118, 160, 2,0.3);
+} */
+.srch-btn{
+    background-color: rgb(118, 160, 2);
+    color: #fff;;
+    border-radius: 1px;
+    outline: none!important;
+    border: none!important; 
+    padding: 5px 5px;
+    transition: all .2s ease-in-out;
+}
+.srch-btn:focus{
+    background-color: rgb(101, 138, 1)!important;
+    box-shadow:none!important;
+}
+.srch-btn:hover{
+    background-color: rgb(101, 138, 1)!important;
+}
+
+.result-div{
+    padding: 20px;
+    text-align: left;
+}
+.result-div img{
+    width: 20%;
+    border-radius: 100px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 51%);
+}
+
+.result-div h1{
+    font-size: 2rem;
+}
+.result-div h3{
+    font-size: 1.3rem;
+}
+.result-div p {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 767.5px){
+    .main-div {
+        width: 95%;
+    }
+    .main-div h1{
+        font-size: 1.5rem;
+    }
+    .main-div h3{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
